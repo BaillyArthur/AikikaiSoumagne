@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aikiki Soumagne</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col min-h-screen bg-[url('../pictures/background.avif')] bg-cover bg-center min-h-[500px]">
+    <div id="header"></div>
+    <main class="flex flex-grow flex-col gap-3 mx-[20%]">
+        <!-- <h1 class="font-bold text-4xl flex justify-center mt-3">Nos professeurs</h1> -->
+        <div class="flex flex-col gap-[2vw]">
+            <div class="flex flex-col gap-3">
+                <h2 class="text-xl font-bold text-center">Professeur principal adultes</h2>
+                <div class="flex flex-row items-center gap-3">
+                    <img src="../pictures/professeurs/FabianVanosamel.jpg" class="flex w-32">
+                    <div>
+                        <h3 class="font-bold">Fabian VANOSMAEL</h3>
+                        <p>5°dan de l'Aïkikaï So Hombu de Tokyo - Shidoin</p>
+                        <p>A débuté l'Aïkido en 1998</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="flex flex-col justify-end gap-3">
+                <h2 class="text-xl font-bold text-center">Professeur en second adultes</h2>
+                <div class="flex flex-row items-center gap-3">
+                    <div>
+                        <div class="flex flex-row justify-end gap-2">
+                            <h3 class="text-end font-bold">François WARLET</h3>
+                            <div>
+                                <a href="../pictures/titre/titre_Shihan_Francois_Warlet.jpg" class="underline hover:no-underline">Nomination Shihan</a>
+                                <span class="mx-1">-</span>
+                                <a href="" class="underline hover:no-underline">Interview Flash AFA</a>
+                                <span class="mx-1">-</span>
+                                <a href="../pictures/documents/journal_Francois_warlet.pdf" class="underline hover:no-underline">Aikido Journal</a>
+                            </div>
+                        </div>
+                        <p class="text-end">
+                            7° dan National - 7° dan de l'Aïkikaï So Hombu de Tokyo<br> Breveté moniteur Adeps et maître
+                            de stage Adeps <br>A débuté l'Aikido en 1969. A commencé a enseigné en 1974<br> Membre du
+                            Comité Supérieur de l' AFA</p>
+                        <p class="text-end">
+                            A étudié et continue encore a étudié sous la direction de nombreux maîtres japonais et
+                            européens afin de continuer à dispenser un enseignement sérieux et de qualité à ces élèves.
+                        </p>
+                        <p class="text-end">
+                            4 séjours au Japon et beaucoup de déplacements en Europe afin de continuer à se
+                            perfectionner.
+                        </p>
+                    </div>
+                    <img src="../pictures/professeurs/FrancoisWarlet.jpg" class="flex w-32 border-2 border-black">
+                </div>
+            </div>
+            <hr>
+            <div class="flex flex-col gap-3">
+                <h2 class="text-xl text-center font-bold">Professeur principal des enfants</h2>
+                <div class="flex flex-row items-center gap-3">
+                    <img src="../pictures/professeurs/GiovanniTinelli.jpg" class="flex w-32">
+                    <div>
+                        <h3 class="font-bold">Giovanni TINELLI</h3>
+                        <p>5° dan National - 5° dan de l'Aïkikaï So Hombu de Tokyo</p>
+                        <p>A débuté l'Aikido en 1975 et a commencé à enseigner en 1982</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="flex text-center flex-col gap-3">
+                <h2 class="text-xl font-bold">Professeur en second des enfants</h2>
+                <div class="flex flex-row items-center justify-end gap-3">
+                    <div>
+                        <h3 class="text-end font-bold">Francine GALLO</h3>
+                        <p class="text-end">4° dan National - 4° dan de l'Aïkikaï So Hombu de Tokyo - Shidoin</p>
+                        <p class="text-end">A débuté l'Aikido en 1975 et a commencé à enseigner en 1982</p>
+                    </div>
+                    <img src="../pictures/professeurs/FrancineGallo.jpg" class="flex w-32 border-2 border-black">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+    <script>
+        fetch("./imports/header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+        fetch("./imports/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+    <div class="flex justify-center">
+    </div>
+</body>
+
+</html>
