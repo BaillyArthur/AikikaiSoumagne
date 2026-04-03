@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aikiki Soumagne</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col min-h-screen bg-[url('../pictures/background.avif')] bg-cover bg-center min-h-[500px]">
+    <div id="header"></div>
+    <main class="flex flex-grow flex-col gap-3 mx-[20%]">
+        <div class="flex flex-row gap-8 my-8">
+            <div class="border-b-2 border-r-2 rounded-br-xl border-gray-300">
+                <h1 style="font-family: 'Zen Old Mincho', serif;" class="text-8xl flex justify-center p-4">
+                    L’histoire du dojo
+                </h1>
+            </div>
+            <div class="flex flex-row">
+                <p class="text-lg leading-relaxed text-justify
+          first-letter:text-6xl 
+          first-letter:font-bold 
+          first-letter:float-left 
+          first-letter:leading-none">
+                    <span style="font-family: 'Zen Old Mincho', serif;">F</span>ondé en <span
+                        class="font-bold">1974</span>, l’Aïkikaï de Soumagne
+                    est aujourd’hui une référence
+                    locale
+                    dans la pratique de l’aïkido. Le dojo a été créé par notre professeur actuel
+                    <a class="underline" href="./professeurs.html">M. François Warlet</a>, 7e dan Shihan diplômé de
+                    l’Aïkikaï de
+                    Tokyo, moniteur ADEPS et membre du Comité Supérieur de l’Association Francophone d’Aïkido.
+                </p>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+    <script>
+        fetch("./imports/header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+        fetch("./imports/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+    <div class="flex justify-center">
+    </div>
+</body>
+
+</html>
