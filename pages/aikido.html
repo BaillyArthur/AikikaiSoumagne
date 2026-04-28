@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aikiki Soumagne</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body class="flex flex-col min-h-screen">
     <div id="header"></div>
-    <main class="flex flex-grow flex-col gap-3 mx-[20%] gap-3">
-        <div class="flex flex-row gap-8 my-8">
-            <div class="border-b-2 border-r-2 rounded-br-xl border-gray-300 basis-[50%] shrink-0">
+    <main class="flex flex-grow flex-col gap-6 px-4 md:px-8 md:px-[10%] lg:px-[15%]">
+        <div class="flex flex-col md:flex-row gap-6 my-6 md:my-8">
+            <div
+                class="border-b-2 md:border-r-2 border-gray-300 md:rounded-br-xl pb-4 md:pb-0 md:pr-6 md:basis-[45%] md:shrink-0">
                 <h1 style="font-family: 'Zen Old Mincho', serif;"
-                    class="text-8xl flex justify-center p-4 text-justify  ">
-                    Decouvrir l’Aïkido
+                    class="text-4xl md:text-8xl font-light text-center md:flex md:justify-center md:p-4">
+                    Découvrir l'Aïkido
                 </h1>
             </div>
-            <div class="basis-[50%]">
-                <p class="text-lg leading-relaxed text-justify">
+            <div class="md:basis-[55%]">
+                <p class="text-base md:text-lg leading-relaxed text-justify">
                     L'Aïkido constitue la synthèse de tous les arts martiaux japonais pratiqués par les samouraï depuis
                     plusieurs siècles. Avant la seconde guerre mondiale, l'Aïkido n'était pas accessible au grand public
                     mais seulement réservé à une élite : experts en Budo, nobles, chefs militaires et personnalités d'un
@@ -27,50 +29,49 @@
                 </p>
             </div>
         </div>
-        <div class="flex flex-row items-center gap-3 ">
-            <img src="../pictures/aikido/aikikai_japon.jpg" class="w-70 h-60">
+        <div class="flex flex-col md:flex-row items-center gap-5">
+            <img src="../pictures/aikido/aikikai_japon.jpg"
+                class="w-full md:w-64 md:h-52 object-cover rounded-lg shrink-0">
             <div class="flex flex-col gap-3">
                 <p class="text-justify">
-                    Après la guerre, le créateur de l'Aïkido, <span class="font-bold">Maître Morihei UESHIBA</span>, décida que la pratique de l'Aïkido
-                    devait s'étendre à tout le Japon et au monde entier. Le centre mondial qui est à Tokyo est
-                    maintenant
-                    dirigé par Moriteru UESHIBA, le petit-fils de Maître Morihei UESHIBA.</p>
+                    Après la guerre, le créateur de l'Aïkido, <span class="font-bold">Maître Morihei UESHIBA</span>,
+                    décida que la pratique de l'Aïkido devait s'étendre à tout le Japon et au monde entier. Le centre
+                    mondial qui est à Tokyo est maintenant dirigé par Moriteru UESHIBA, le petit-fils de Maître Morihei
+                    UESHIBA.
+                </p>
                 <p class="text-justify">
                     Introduit en France par Maître Minoru Mochizuki en 1951, puis par Maître Tadashi Abe (1952),
-                    l'Aïkido
-                    est implanté dans tous les pays d'Europe où il ne cesse de se développer.
+                    l'Aïkido est implanté dans tous les pays d'Europe où il ne cesse de se développer.
                 </p>
             </div>
         </div>
-        <h2 class="font-bold text-2xl pt-2">Pour les enfants :</h2>
-        <div class="flex flex-row items-center gap-3 ">
-            <div class="flex flex-col gap-3">
+        <h2 class="font-bold text-xl md:text-2xl pt-2">Pour les enfants :</h2>
+        <div class="flex flex-col md:flex-row items-center gap-5">
+            <div class="flex flex-col gap-3 order-2 md:order-1">
                 <p class="text-justify">
                     Ceux-ci apprennent les principes de base, les chutes ainsi que le respect envers les autres grâce au
-                    rituel et à l'étiquette propre à l'Aïkido. Ils sont observé et corrigé pendant leur écolage, et ce
-                    grâce
-                    à l'expérience du professeur et de ses assistants.
+                    rituel et à l'étiquette propre à l'Aïkido. Ils sont observés et corrigés pendant leur écolage, et ce
+                    grâce à l'expérience du professeur et de ses assistants.
                 </p>
                 <p class="text-justify">
-                    C'est un cours, donné avec rigueur et sympathie qui ne laisse aucun élève à l'écart. Chacun apprends
+                    C'est un cours, donné avec rigueur et sympathie qui ne laisse aucun élève à l'écart. Chacun apprend
                     donc ainsi plus vite les premières bases de l'Aïkido pour en construire ensuite de plus solides. Le
                     cours "enfants" est accessible dès l'âge de 5 ans, ensuite vers l'âge de 13 ans il pourra rejoindre
-                    le
-                    cours des adultes avec un sérieux bagage à la clef.
+                    le cours des adultes avec un sérieux bagage à la clef.
                 </p>
             </div>
-            <img src="../pictures/aikido/Enfant.jpg" class="w-70 h-60">
+            <img src="../pictures/aikido/Enfant.jpg"
+                class="w-full md:w-64 md:h-52 object-cover rounded-lg shrink-0 order-1 md:order-2">
         </div>
-        <h2 class="font-bold text-2xl">Pour les adultes :</h2>
-        <div class="flex flex-row items-center gap-3">
-            <img src="../pictures/aikido/Adultes.jpg" class="w-70 h-60">
+        <h2 class="font-bold text-xl md:text-2xl">Pour les adultes :</h2>
+        <div class="flex flex-col md:flex-row items-center gap-5 mb-8">
+            <img src="../pictures/aikido/Adultes.jpg" class="w-full md:w-64 md:h-52 object-cover rounded-lg shrink-0">
             <div class="flex flex-col gap-3">
                 <p class="text-justify">
-                    l'Aïkido étant un art martial sans compétition, il s'adresse donc aussi bien aux <span class="font-bold">dames</span> qu'aux
-                    <span class="font-bold">homme</span>,
+                    L'Aïkido étant un art martial sans compétition, il s'adresse donc aussi bien aux <span
+                        class="font-bold">dames</span> qu'aux <span class="font-bold">hommes</span>,
                     sans limite d'âge, pourvu que prédomine en chaque élève la volonté d'accéder à cette souplesse du
-                    corps
-                    et de l'esprit si nécessaire dans les arts martiaux.
+                    corps et de l'esprit si nécessaire dans les arts martiaux.
                 </p>
                 <p class="text-justify">
                     Vous apprendrez également l'esprit d'entraide, le respect mutuel et vous développerez des qualités
@@ -81,21 +82,13 @@
         </div>
     </main>
     <div id="footer"></div>
-    <script>
-        fetch("./imports/header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("header").innerHTML = data;
-            });
-
-        fetch("./imports/footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer").innerHTML = data;
-            });
+    <script type="module">
+        import { displayImport, btnMenuClicker } from "../script/base.js";
+        displayImport().then(() => {
+            document.getElementById("menu-btn").addEventListener("click", btnMenuClicker);
+            document.getElementById("menu-btn-close").addEventListener("click", btnMenuClicker);
+        });
     </script>
-    <div class="flex justify-center">
-    </div>
 </body>
 
 </html>

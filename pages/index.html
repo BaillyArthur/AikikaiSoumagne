@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aikiki Soumagne</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -11,266 +11,139 @@
 
 <body class="flex flex-col min-h-screen bg-[url('../pictures/background.avif')] bg-cover bg-center min-h-[500px]">
     <div id="header" class="!pb-0"></div>
-
-    <!-- <main class="flex flex-grow flex-col gap-3 mx-[20%]"> -->
-    <main class="overflow-hidden w-full">
-        <div class="relative flex items-center">
+    <main class="w-full flex-grow">
+        <div class="overflow-hidden relative flex items-center">
             <div id="slider" class="flex transition-transform duration-700">
+                <div class="w-full flex-shrink-0 relative">
+                    <img src="../pictures/index/baniere/Aikido.jpg" class="w-full" />
+                    <div class="absolute inset-0 bg-black opacity-30"></div>
+                    <button
+                        class="absolute left-1/3 top-1/2 md:top-2/3 -translate-x-1/2 -translate-y-1/2 px-2 py-1 md:px-4 md:py-3"
+                        onclick="goToPage()">
+                        <div class="flex flex-col text-base md:text-4xl font-bold text-white gap-1 md:gap-3">
+                            <div class="flex justify-end">
+                                <hr class="w-16 md:w-32 border-1 md:border-2">
+                            </div>
+                            <div class="pl-2 md:pl-4">
+                                <p>Qu'est ce</p>
+                                <p class="pl-2">que l'aikido</p>
+                            </div>
+                            <div class="flex justify-start">
+                                <hr class="w-16 md:w-32 border-1 md:border-2">
+                            </div>
+                        </div>
+                        <a href="aikido.html"
+                            class="flex justify-end text-white underline hover:no-underline text-xs md:text-sm">En
+                            savoir
+                            plus</a>
+                    </button>
+                </div>
                 <div class="w-full flex-shrink-0 relative">
                     <img src="../pictures/index/baniere/Dojo.jpg" class="w-full" />
                     <div class="absolute inset-0 bg-black opacity-30"></div>
-                    <button class="absolute left-2/3 top-2/3 -translate-x-1/2 -translate-y-1/2 px-4 py-3"
+                    <button
+                        class="absolute left-2/3 top-1/2 md:top-2/3 -translate-x-1/2 -translate-y-1/2 px-2 py-1 md:px-4 md:py-3"
                         onclick="goToPage()">
-                        <div class="flex flex-col text-4xl font-bold text-white gap-3">
-                            <div class="flex justify-end">
-                                <hr class="w-32 border-2">
+                        <div class="flex flex-col text-base md:text-4xl font-bold text-white gap-1 md:gap-3">
+                            <div class="flex justify-start">
+                                <hr class="w-16 md:w-32 border-1 md:border-2">
                             </div>
-                            <div class="pl-4">
+                            <div class="pl-2 md:pl-4">
                                 <p>Découvrez</p>
                                 <p class="pl-2">Notre Dojo</p>
                             </div>
-                            <div class="flex justify-start">
-                                <hr class="w-32 border-2">
+                            <div class="flex justify-end">
+                                <hr class="w-16 md:w-32 border-1 md:border-2">
                             </div>
                         </div>
-                        <a href="dojo.html" class="flex justify-end text-white underline hover:no-underline">En savoir plus</a>
+                        <a href="dojo.html" class="flex justify-start text-white underline hover:no-underline text-xs md:text-sm">En
+                            savoir
+                            plus</a>
                     </button>
                 </div>
                 <div class="w-full flex-shrink-0 relative">
                     <img src="../pictures/index/baniere/Les armes.jpg" class="w-full" />
                     <div class="absolute inset-0 bg-black opacity-30"></div>
-                    <button class="absolute left-1/3 top-2/3 -translate-x-1/2 -translate-y-1/2 px-4 py-3"
+                    <button
+                        class="absolute left-1/3 top-1/2 md:top-2/3 -translate-x-1/2 -translate-y-1/2 px-2 py-1 md:px-4 md:py-3"
                         onclick="goToPage()">
-                        <div class="flex flex-col text-4xl font-bold text-white gap-3">
-                            <div class="flex justify-start">
-                                <hr class="w-32 border-2">
+                        <div class="flex flex-col text-base md:text-4xl font-bold text-white gap-1 md:gap-3">
+                            <div class="flex justify-end">
+                                <hr class="w-16 md:w-32 border-1 md:border-2">
                             </div>
-                            <div class="pl-4">
+                            <div class="pl-2 md:pl-4">
                                 <p>Découvrez</p>
                                 <p class="pl-2">Les armes</p>
                             </div>
-                            <div class="flex justify-end">
-                                <hr class="w-32 border-2">
+                            <div class="flex justify-start">
+                                <hr class="w-16 md:w-32 border-1 md:border-2">
                             </div>
                         </div>
-                        <a href="armes.html" class="flex justify-end text-white underline hover:no-underline">En savoir plus</a>
+                        <a href="armes.html" class="flex justify-end text-white underline hover:no-underline text-xs md:text-sm">En
+                            savoir plus</a>
                     </button>
                 </div>
+
                 <div class="w-full flex-shrink-0 relative">
                     <img src="../pictures/index/baniere/Prof en action.jpg" class="w-full" />
                     <div class="absolute inset-0 bg-black opacity-30"></div>
-                    <button class="absolute left-1/3 top-2/3 -translate-x-1/2 -translate-y-1/2 px-4 py-3"
+                    <button
+                        class="absolute left-1/3 top-1/2 md:top-2/3 -translate-x-1/2 -translate-y-1/2 px-2 py-1 md:px-4 md:py-3"
                         onclick="goToPage()">
-                        <div class="flex flex-col text-4xl font-bold text-white gap-3">
+                        <div class="flex flex-col text-base md:text-4xl font-bold text-white gap-1 md:gap-3">
                             <div class="flex justify-end">
-                                <hr class="w-32 border-2">
+                                <hr class="w-16 md:w-32 border-1 md:border-2">
                             </div>
-                            <div class="pl-4">
+                            <div class="pl-2 md:pl-4">
                                 <p>Découvrez</p>
                                 <p class="pl-2">Nos professeurs</p>
                             </div>
                             <div class="flex justify-start">
-                                <hr class="w-32 border-2">
+                                <hr class="w-16 md:w-32 border-1 md:border-2">
                             </div>
                         </div>
-                        <a href="professeurs.html" class="flex justify-end text-white underline hover:no-underline">En savoir plus</a>
+                        <a href="professeurs.html"
+                            class="flex justify-end text-white underline hover:no-underline text-xs md:text-sm">En savoir plus</a>
                     </button>
                 </div>
-            </div>
-            <button onclick="prevSlide()"
-                class="absolute left-5 top-1/2 -translate-y-1/2 bg-white/70 px-4 py-2 rounded">
-                <i class="fa-solid fa-caret-left text-2xl"></i>
+            </div>  
+            <button id="prev-btn"
+                class="absolute left-5 top-1/2 -translate-y-1/2 bg-white/70 px-2 py-1 md:px-4 md:py-2 rounded">
+                <i class="fa-solid fa-caret-left text-xl md:text-2xl"></i>
             </button>
-            <button onclick="nextSlide()"
-                class="absolute right-5 top-1/2 -translate-y-1/2 bg-white/70 px-4 py-2 rounded">
-                <i class="fa-solid fa-caret-right text-2xl"></i>
+            <button id="next-btn"
+                class="absolute right-5 top-1/2 -translate-y-1/2 bg-white/70 px-2 py-1 md:px-4 md:py-2 rounded">
+                <i class="fa-solid fa-caret-right text-xl md:text-2xl"></i>
             </button>
             <button id="cta" onclick="goToPage()">
             </button>
         </div>
         <div id="events-container" class="flex flex-col gap-8 pt-5">
-            <h2 class="text-4xl pl-12">Nos prochains événements</h2>
+            <h2 class="text-2xl md:text-4xl pl-4 md:pl-12">Nos prochains événements</h2>
         </div>
-
-        <script>
-            const events = [
-                {
-                    startDate: "2026-04-10",
-                    endDate: "2026-04-12",
-                    title: "Stage International",
-                    description: "Miyamoto Tsuruzo Shihan – 8ème Dan Aïkikaï, Etterbeek"
-                },
-                {
-                    startDate: "2026-04-25",
-                    title: "Stage Commission Technique",
-                    description: "Benoit Toulotte & Nabil Messaoudi, Thieu"
-                },
-                {
-                    startDate: "2026-05-17",
-                    title: "Stage Commission Technique",
-                    description: "Christophe Depaus & Frédéric Ernould, Amay"
-                },
-                {
-                    startDate: "2026-05-23",
-                    title: "Session d’examens Dan",
-                    description: "Namur"
-                },
-                {
-                    startDate: "2026-05-31",
-                    title: "Journée des enfants",
-                    description: "Gerpinnes"
-                },
-                {
-                    startDate: "2026-06-05",
-                    endDate: "2026-04-12",
-                    title: "Micheline Vaillant-Tissier Shihan",
-                    description: "7ème Dan Aïkikaï, Waremme"
-                },
-                {
-                    startDate: "2026-07-06",
-                    endDate: "2026-07-10",
-                    title: "Camp d’été de la Commission Junior",
-                    description: "Louvain-la-Neuve"
-                },
-                {
-                    startDate: "2026-08-08",
-                    endDate: "2026-08-14",
-                    title: "Summer Camp",
-                    description: "Miyamoto Tsuruzo Shihan – 8ème Dan Aïkikaï, Spa"
-                },
-                {
-                    startDate: "2026-09-11",
-                    endDate: "2026-09-13",
-                    title: "Stage International",
-                    description: "Christian Tissier, Louvain-la-Neuve"
-                },
-                {
-                    startDate: "2026-011-13",
-                    endDate: "2026-11-15",
-                    title: "Stage International",
-                    description: "Kuribayashi Takanori Shihan"
-                }
-            ];
-            const today = new Date();
-
-            const container = document.getElementById("events-container");
-
-            const exist = events.some((event) => {
-                const start = new Date(event.startDate);
-                return start > today
-            })
-
-            if (exist) {
-                events.forEach(event => {
-                    const start = new Date(event.startDate);
-                    const end = event.endDate ? new Date(event.endDate) : null;
-
-                    const dayStart = start.getDate();
-                    const dayEnd = end ? end.getDate() : null;
-
-                    const month = start.toLocaleDateString("fr-FR", { month: "long", year: "numeric" });
-
-                    let dateDisplay = "";
-
-                    if (end) {
-                        dateDisplay = `${dayStart} → ${dayEnd}`;
-                    } else {
-                        dateDisplay = dayStart;
-                    }
-
-                    if ((end && end > today) || (!end && start > today)) {
-                        container.innerHTML += `
-    <div class="flex flex-row w-full gap-24 px-32 items-center">
-        <div class="w-36">
-            <div class="flex flex-col items-center">
-                <p class="text-2xl font-bold">${dateDisplay}</p>
-                <p>${month}</p>
-                </div>
-                </div>
-                <div>
-                    <p class="text-4xl">${event.title}</p>
-                    <p>${event.description}</p>
-                    </div>
-                    </div>
-                    <hr class="w-[80%] mx-auto border-gray-300">
-                    `;
-                    }
-                });
-            } else {
-                container.innerHTML += `
-                   <div class="pl-12 text-2xl">
-                        Aucun évenement pour le moment
-                </div>                    `;
-
-            }
-        </script>
-
     </main>
 
     <div id="footer"></div>
-    <script>
-        fetch("./imports/header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("header").innerHTML = data;
-            });
 
-        fetch("./imports/footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer").innerHTML = data;
-            });
-
-        let current = 0;
-        const slider = document.getElementById("slider");
-        const total = 3;
-
-        const urls = [
-            "dojo.html",
-            "armes.html",
-            "professeurs.html",
-        ];
-
-        function updateSlider() {
-            slider.style.transform = "translateX(-" + (current * 100) + "%)";
-        }
-
-        function nextSlide() {
-            current++;
-            if (current >= total) {
-                current = 0;
-            }
-            updateSlider();
-        }
-
-        function prevSlide() {
-            current--;
-            if (current < 0) {
-                current = total - 1;
-            }
-            updateSlider();
-        }
-        setInterval(() => {
-
-            current++;
-
-            if (current >= total) {
-                current = 0;
-            }
-
-            updateSlider();
-
-        }, 7000);
+    <script type="module">
+        import { displayImport, btnMenuClicker } from "../script/base.js";
+        import { updateSlider, prevSlide, nextSlide } from "../script/baniere.js";
+        import { displayEvent } from "../script/event.js";
 
         updateSlider();
+        displayEvent();
+        document.getElementById("prev-btn").addEventListener("click", prevSlide)
+        document.getElementById("next-btn").addEventListener("click", nextSlide);
+
+        displayImport().then(() => {
+            document.getElementById("menu-btn").addEventListener("click", btnMenuClicker);
+            document.getElementById("menu-btn-close").addEventListener("click", btnMenuClicker);
+        });
 
         function goToPage() {
             window.location.href = urls[current];
         }
-
     </script>
-    <div class="flex justify-center">
-    </div>
 </body>
 
 </html>

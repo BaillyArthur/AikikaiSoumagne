@@ -1,37 +1,75 @@
-<header>
-    <div class="flex flex-row justify-between items-center h-24 px-16 bg-blue-200">
-        <div>
-            <a href="./ ">
-                <img src="../../pictures/logo.png" class="w-40">
-            </a>
+<header class="relative">
+    <div class="flex flex-col md:flex-row justify-between items-center px-4 md:px-16 py-2 bg-blue-200 w-full">
+        <div class="flex items-center gap-4 w-full md:w-auto justify-center md:justify-start">
+            <div> <a href="./ "> <img src="../../pictures/logo.png" class="w-24 md:w-40"> </a> </div>
+            <div style="font-family: 'Zen Old Mincho', serif;" class="font-bold text-2xl md:text-4xl"> Aikikai Soumage
+            </div>
         </div>
-        <div class="font-bold text-4xl">
-            Aikikai Soumage
-        </div>
-        <div>
-            <div>
-                <div class="flex flex-row items-center gap-3">
-                    <img src="../../icons/phone.png" class="w-5 h-5">
-                    <p>087 31 64 85 - 04 477 25 07</p>
+        <div class="hidden md:block">
+            <div class="flex flex-col gap-2">
+                <div class="flex flex-row items-center gap-3"> <img src="../../icons/phone.png"
+                        class="w-3 h-3 md:w-5 md:h-5">
+                    <p class="text-sm">0495 93 10 16 - 0496 60 74 26</p>
                 </div>
-                <div class="flex flex-row items-center gap-3">
-                    <img src="../../icons/mail.png" class="w-5 h-5">
-                    <p>aikido@gmail.com</p>
+                <div class="flex flex-row items-center gap-3"> <img src="../../icons/mail.png"
+                        class="w-4 h-4 md:w-5 md:h-5">
+                    <p class="text-sm">giovanni1948@hotmail.fr</p>
                 </div>
-                <a class="flex flex-row items-center gap-3 hover:underline" href="https://www.facebook.com/groups/437246949636428/">
-                    <img src="../../icons/facebook.png" class="w-7 h-7">
-                    <p>Aïkikaï Soumagne (école d'Aïkido)</p>
+                <a class="flex flex-row items-center gap-3 hover:underline"
+                    href="https://www.facebook.com/groups/437246949636428/"> <img src="../../icons/facebook.png"
+                        class="w-4 h-4 md:w-7 md:h-7">
+                    <p class="text-sm">Aïkikaï Soumagne (école d'Aïkido)</p>
                 </a>
             </div>
+        </div>
+    </div>
+    <button id="menu-btn" class="md:hidden fixed top-5 left-4 text-2xl">
+        ☰
+    </button>
+
+    <div id="mobile" class="fixed top-0 left-0 h-screen w-[55%] bg-blue-400 text-white p-6 z-50
+            transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col gap-32">
+        <div class="flex flex-col gap-3">
+            <button id="menu-btn-close" class="self-start">
+                <i class="fa-solid fa-xmark text-4xl"></i>
+            </button>
+            <a href="./" class="text-white hover:text-black hover:underline">Accueil</a>
+            <a href="aikido.html" class="text-white hover:text-black hover:underline">Qu'est ce que l'Aikido</a>
+            <a href="dojo.html" class="text-white hover:text-black hover:underline">L'histoire de notre dojo</a>
+            <a href="armes.html" class="text-white hover:text-black hover:underline">Le travail aux armes</a>
+            <a href="professeurs.html" class="text-white hover:text-black hover:underline">Nos professeurs</a>
+            <a href="horaire.html" class="text-white hover:text-black hover:underline">Nos horaires</a>
+        </div>
+        <div class="flex flex-col gap-3">
+            <div class="flex flex-row items-center gap-3">
+                <img src="../../icons/phone.png" class="w-3 h-3 md:w-5 md:h-5">
+                <div class="flex flex-col md:flex-row">
+                    <p class="text-sm">0495 93 10 16</p>
+                    <div class="hidden md:block">
+                        -
+                    </div>
+                    <p class="text-sm">0496 60 74 26</p>
+
+                </div>
             </div>
+            <div class="flex flex-row items-center gap-3"> <img src="../../icons/mail.png"
+                    class="w-4 h-4 md:w-5 md:h-5">
+                <p class="text-sm">giovanni1948@hotmail.fr</p>
+            </div>
+            <a class="flex flex-row items-center gap-3 hover:underline"
+                href="https://www.facebook.com/groups/437246949636428/"> <img src="../../icons/facebook.png"
+                    class="w-4 h-4 md:w-7 md:h-7">
+                <p class="text-sm">Aïkikaï Soumagne (école d'Aïkido)</p>
+            </a>
         </div>
-        <div class="bg-blue-400 flex justify-between px-64 h-12 items-center">
-            <a href="./" class="text-white hover:text-black">Accueil</a>
-            <a href="aikido.html" class="text-white hover:text-black">Qu'est ce que l'Aikido</a>
-            <a href="dojo.html" class="text-white hover:text-black">L'histoire de notre dojo</a>
-            <a href="armes.html" class="text-white hover:text-black">Le travail aux armes</a>
-            <a href="professeurs.html" class="text-white hover:text-black">Nos professeurs</a>
-            <a href="horaire.html" class="text-white hover:text-black">Nos horaires</a>
-            <a href="stages.html" class="text-white hover:text-black">Stages</a>
-        </div>
+    </div>
+    <div id="menu" class="hidden absolute top-full left-0 w-full bg-blue-400 p-4 space-y-2
+    md:static md:flex md:flex-row md:space-y-0 md:gap-6 md:px-32 md:py-3 md:justify-between">
+        <a href="./" class="text-white hover:text-black hover:underline">Accueil</a>
+        <a href="aikido.html" class="text-white hover:text-black hover:underline">Qu'est ce que l'Aikido</a>
+        <a href="dojo.html" class="text-white hover:text-black hover:underline">L'histoire de notre dojo</a>
+        <a href="armes.html" class="text-white hover:text-black hover:underline">Le travail aux armes</a>
+        <a href="professeurs.html" class="text-white hover:text-black hover:underline">Nos professeurs</a>
+        <a href="horaire.html" class="text-white hover:text-black hover:underline">Nos horaires</a>
+    </div>
 </header>
